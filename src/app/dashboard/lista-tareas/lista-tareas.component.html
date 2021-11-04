@@ -2,7 +2,7 @@
   <div class="card-body">
     <div class="input-group">
       <input type="text" placeholder="Agregar Tarea" class="form-control form-control-lg" [(ngModel)]="tarea">
-      <button type="button" class="btn btn-success btn-lg" (click)="agregarTarea()" [disabled]="tarea===''">Agregar</button>
+      <button type="button" class="btn btn-success" (click)="agregarTarea()" [disabled]="tarea===''">Agregar</button>
     </div>
     <br>
     <h5 *ngIf="listaTareas.length === 0">No hay tareas para realizar</h5>
